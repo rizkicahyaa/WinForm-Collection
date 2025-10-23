@@ -20,6 +20,24 @@ namespace WinformCollection
             public string Nama { get; set; }
             public string Kelas { get; set; }
             public int Nilai { get; set; }
+            public string NilaiHuruf
+            {
+                get
+                {
+                    if (Nilai >= 0 && Nilai <= 20)
+                        return "E";
+                    else if (Nilai >= 21 && Nilai <= 40)
+                        return "D";
+                    else if (Nilai >= 41 && Nilai <= 60)
+                        return "C";
+                    else if (Nilai >= 61 && Nilai <= 80)
+                        return "B";
+                    else if (Nilai >= 81 && Nilai <= 100)
+                        return "A";
+                    else
+                        return "-";
+                }
+            }
         }
 
         public Form1()
@@ -39,6 +57,7 @@ namespace WinformCollection
             lvwMahasiswa.Columns.Add("Nama", 200, HorizontalAlignment.Left);
             lvwMahasiswa.Columns.Add("Kelas", 70, HorizontalAlignment.Center);
             lvwMahasiswa.Columns.Add("Nilai", 50, HorizontalAlignment.Center);
+            lvwMahasiswa.Columns.Add("Nilai Huruf", 50, HorizontalAlignment.Center);
         }
 
         private void lvwMahasiswa_SelectedIndexChanged(object sender, EventArgs e)
@@ -114,6 +133,7 @@ namespace WinformCollection
                 item.SubItems.Add(mhs.Nama);
                 item.SubItems.Add(mhs.Kelas);
                 item.SubItems.Add(mhs.Nilai.ToString());
+                item.SubItems.Add(mhs.NilaiHuruf);
                 lvwMahasiswa.Items.Add(item);
             }
         }
@@ -144,7 +164,6 @@ namespace WinformCollection
             {
                 MessageBox.Show("Data mahasiswa belum dipilih !!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
         }
     }
 }

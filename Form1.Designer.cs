@@ -137,7 +137,7 @@
             this.groupBox1.Controls.Add(this.lvwMahasiswa);
             this.groupBox1.Location = new System.Drawing.Point(473, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(713, 501);
+            this.groupBox1.Size = new System.Drawing.Size(820, 501);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "[ Daftar Mahasiswa ]";
@@ -147,7 +147,7 @@
             this.lvwMahasiswa.HideSelection = false;
             this.lvwMahasiswa.Location = new System.Drawing.Point(6, 85);
             this.lvwMahasiswa.Name = "lvwMahasiswa";
-            this.lvwMahasiswa.Size = new System.Drawing.Size(701, 410);
+            this.lvwMahasiswa.Size = new System.Drawing.Size(808, 410);
             this.lvwMahasiswa.TabIndex = 0;
             this.lvwMahasiswa.UseCompatibleStateImageBehavior = false;
             this.lvwMahasiswa.SelectedIndexChanged += new System.EventHandler(this.lvwMahasiswa_SelectedIndexChanged);
@@ -176,7 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1228, 604);
+            this.ClientSize = new System.Drawing.Size(1338, 604);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSimpan);
