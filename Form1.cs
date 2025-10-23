@@ -122,5 +122,29 @@ namespace WinformCollection
         {
             TampilkanData();
         }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            // cek apakah data mahasiswa sudah dipilih
+            if (lvwMahasiswa.SelectedItems.Count > 0)
+            {
+                // tampilkan konfirmasi
+                var konfirmasi = MessageBox.Show("Apakah data mahasiswa ingin dihapus ? ", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (konfirmasi == DialogResult.Yes)
+                {
+                    // ambil index list yang di pilih
+                    var index = lvwMahasiswa.SelectedIndices[0];
+                    // hapus objek mahasiswa dari list
+                    list.RemoveAt(index);
+                    // refresh tampilan listivew
+                    TampilkanData();
+                }
+            }
+            else // data belum dipilih
+            {
+                MessageBox.Show("Data mahasiswa belum dipilih !!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+        }
     }
 }
