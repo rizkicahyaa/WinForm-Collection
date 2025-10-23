@@ -1,0 +1,11 @@
+D:\WinForm Project\WinformCollection\WinformCollection\bin\Debug\WinformCollection.exe.config
+D:\WinForm Project\WinformCollection\WinformCollection\bin\Debug\WinformCollection.exe
+D:\WinForm Project\WinformCollection\WinformCollection\bin\Debug\WinformCollection.pdb
+D:\WinForm Project\WinformCollection\WinformCollection\obj\Debug\WinformCollection.csproj.AssemblyReference.cache
+D:\WinForm Project\WinformCollection\WinformCollection\obj\Debug\WinformCollection.Form1.resources
+D:\WinForm Project\WinformCollection\WinformCollection\obj\Debug\WinformCollection.Properties.Resources.resources
+D:\WinForm Project\WinformCollection\WinformCollection\obj\Debug\WinformCollection.csproj.GenerateResource.cache
+D:\WinForm Project\WinformCollection\WinformCollection\obj\Debug\WinformCollection.csproj.CoreCompileInputs.cache
+D:\WinForm Project\WinformCollection\WinformCollection\obj\Debug\WinformCollection.exe
+D:\WinForm Project\WinformCollection\WinformCollection\obj\Debug\WinformCollection.pdb
+D:\WinForm Project\WinformCollection\WinformCollection\obj\Debug\WinformCollection.exe.config

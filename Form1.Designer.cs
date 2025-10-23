@@ -48,7 +48,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 64);
+            this.label1.Location = new System.Drawing.Point(29, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 20);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 115);
+            this.label2.Location = new System.Drawing.Point(29, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(57, 166);
+            this.label3.Location = new System.Drawing.Point(29, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 20);
             this.label3.TabIndex = 2;
@@ -75,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(57, 217);
+            this.label4.Location = new System.Drawing.Point(29, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 20);
             this.label4.TabIndex = 3;
@@ -83,35 +83,35 @@
             // 
             // txtNim
             // 
-            this.txtNim.Location = new System.Drawing.Point(143, 61);
+            this.txtNim.Location = new System.Drawing.Point(115, 36);
             this.txtNim.Name = "txtNim";
             this.txtNim.Size = new System.Drawing.Size(181, 26);
             this.txtNim.TabIndex = 4;
             // 
             // txtNama
             // 
-            this.txtNama.Location = new System.Drawing.Point(143, 112);
+            this.txtNama.Location = new System.Drawing.Point(115, 87);
             this.txtNama.Name = "txtNama";
             this.txtNama.Size = new System.Drawing.Size(296, 26);
             this.txtNama.TabIndex = 5;
             // 
             // txtKelas
             // 
-            this.txtKelas.Location = new System.Drawing.Point(143, 163);
+            this.txtKelas.Location = new System.Drawing.Point(115, 138);
             this.txtKelas.Name = "txtKelas";
             this.txtKelas.Size = new System.Drawing.Size(181, 26);
             this.txtKelas.TabIndex = 6;
             // 
             // txtNilai
             // 
-            this.txtNilai.Location = new System.Drawing.Point(143, 214);
+            this.txtNilai.Location = new System.Drawing.Point(115, 189);
             this.txtNilai.Name = "txtNilai";
             this.txtNilai.Size = new System.Drawing.Size(181, 26);
             this.txtNilai.TabIndex = 7;
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(78, 286);
+            this.btnSimpan.Location = new System.Drawing.Point(50, 261);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(107, 38);
             this.btnSimpan.TabIndex = 8;
@@ -120,7 +120,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(207, 286);
+            this.btnReset.Location = new System.Drawing.Point(179, 261);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(107, 38);
             this.btnReset.TabIndex = 9;
@@ -132,9 +132,9 @@
             this.groupBox1.Controls.Add(this.btnHapus);
             this.groupBox1.Controls.Add(this.btnTampilkanData);
             this.groupBox1.Controls.Add(this.lvwMahasiswa);
-            this.groupBox1.Location = new System.Drawing.Point(501, 64);
+            this.groupBox1.Location = new System.Drawing.Point(473, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(508, 501);
+            this.groupBox1.Size = new System.Drawing.Size(713, 501);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "[ Daftar Mahasiswa ]";
@@ -144,9 +144,10 @@
             this.lvwMahasiswa.HideSelection = false;
             this.lvwMahasiswa.Location = new System.Drawing.Point(6, 85);
             this.lvwMahasiswa.Name = "lvwMahasiswa";
-            this.lvwMahasiswa.Size = new System.Drawing.Size(496, 410);
+            this.lvwMahasiswa.Size = new System.Drawing.Size(701, 410);
             this.lvwMahasiswa.TabIndex = 0;
             this.lvwMahasiswa.UseCompatibleStateImageBehavior = false;
+            this.lvwMahasiswa.SelectedIndexChanged += new System.EventHandler(this.lvwMahasiswa_SelectedIndexChanged);
             // 
             // btnTampilkanData
             // 
@@ -170,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 604);
+            this.ClientSize = new System.Drawing.Size(1228, 604);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSimpan);
