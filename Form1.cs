@@ -35,5 +35,40 @@ namespace WinformCollection
         {
 
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+        }
+
+        private void ResetForm()
+        {
+            txtNim.Clear();
+            txtNama.Clear();
+            txtKelas.Clear();
+            txtNilai.Text = "0";
+            txtNim.Focus();
+        }
+
+        private bool NumericOnly(KeyPressEventArgs e)
+        {
+            var strValid = "0123456789";
+            if (!(e.KeyChar == Convert.ToChar(Keys.Back)))
+            {
+                // inputan selain angka
+                if (strValid.IndexOf(e.KeyChar) < 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            else
+                return false;
+        }
+
+        private void txtNilai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = NumericOnly(e);
+        }
     }
 }

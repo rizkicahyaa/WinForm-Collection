@@ -108,6 +108,7 @@
             this.txtNilai.Name = "txtNilai";
             this.txtNilai.Size = new System.Drawing.Size(181, 26);
             this.txtNilai.TabIndex = 7;
+            this.txtNilai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNilai_KeyPress);
             // 
             // btnSimpan
             // 
@@ -126,6 +127,7 @@
             this.btnReset.TabIndex = 9;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // groupBox1
             // 
