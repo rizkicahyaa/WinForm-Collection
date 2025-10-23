@@ -100,5 +100,27 @@ namespace WinformCollection
             // reset form input
             ResetForm();
         }
+
+        private void TampilkanData()
+        {
+            // kosongkan data listview
+            lvwMahasiswa.Items.Clear();
+            // lakukan perulangan untuk menampilkan data mahasiswa ke listview
+            foreach (var mhs in list)
+            {
+                var noUrut = lvwMahasiswa.Items.Count + 1;
+                var item = new ListViewItem(noUrut.ToString());
+                item.SubItems.Add(mhs.Nim);
+                item.SubItems.Add(mhs.Nama);
+                item.SubItems.Add(mhs.Kelas);
+                item.SubItems.Add(mhs.Nilai.ToString());
+                lvwMahasiswa.Items.Add(item);
+            }
+        }
+
+        private void btnTampilkanData_Click(object sender, EventArgs e)
+        {
+            TampilkanData();
+        }
     }
 }

@@ -160,6 +160,7 @@
             this.btnTampilkanData.TabIndex = 11;
             this.btnTampilkanData.Text = "Tampilkan Data";
             this.btnTampilkanData.UseVisualStyleBackColor = true;
+            this.btnTampilkanData.Click += new System.EventHandler(this.btnTampilkanData_Click);
             // 
             // btnHapus
             // 
