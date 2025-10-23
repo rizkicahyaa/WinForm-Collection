@@ -12,6 +12,16 @@ namespace WinformCollection
 {
     public partial class Form1 : Form
     {
+        private List<Mahasiswa> list = new List<Mahasiswa>();
+
+        public class Mahasiswa
+        {
+            public string Nim { get; set; }
+            public string Nama { get; set; }
+            public string Kelas { get; set; }
+            public int Nilai { get; set; }
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -69,6 +79,26 @@ namespace WinformCollection
         private void txtNilai_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = NumericOnly(e);
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+            // membuat objek mahasiswa
+            Mahasiswa mhs = new Mahasiswa();
+            // set nilai masing-masing propertynya
+            // berdasarkan inputan yang ada di form
+            mhs.Nim = txtNim.Text;
+            mhs.Nama = txtNama.Text;
+            mhs.Kelas = txtKelas.Text;
+            mhs.Nilai = int.Parse(txtNilai.Text);
+            // tambahkan objek mahasiswa ke dalam collection
+            list.Add(mhs);
+            var msg = "Data mahasiswa berhasil disimpan.";
+            // tampilkan dialog informasi
+            MessageBox.Show(msg, "Informasi", MessageBoxButtons.OK,
+            MessageBoxIcon.Information);
+            // reset form input
+            ResetForm();
         }
     }
 }
